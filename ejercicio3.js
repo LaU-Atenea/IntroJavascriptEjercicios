@@ -67,6 +67,34 @@ const input1 = [
   console.log(ponGuion(thirdInput)); // Resultado con console.log: '1-1-2-3-4'
 
 
+//Ejercicio 3.3: Crea una función para que con estos datos de entrada se produzca los siguientes resultados:
+
+const input_1 = 'string';
+
+const palabra_Longitud_AlReves = (input) => {
+    
+    const longitud = input.length;
+    
+    const alReves = input.split('').reverse().join('');
+    
+    return `${longitud} ${alReves}`;
+  };
+
+console.log(palabra_Longitud_AlReves(input_1)); // Resultado con console.log: '6 gnirts'
+
+const input_2 = 'variable';
+
+console.log(palabra_Longitud_AlReves(input_2)); // Resultado con console.log: '8 elbairav'
+
+const input_3 = 'pointer';
+
+console.log(palabra_Longitud_AlReves(input_3)); // Resultado con console.log: '7 retniop'
+
+
+
+
+
+
 
 
 
