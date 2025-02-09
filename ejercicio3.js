@@ -22,7 +22,7 @@ const input1 = [
     return ruta;
   };
 
-  console.log(creaRuta(input1));
+  console.log(creaRuta(input1)); // Resultado con console.log: /Downloads/Videos/capture.mp4
   
   const input2 = [
     'CodinGame',
@@ -30,7 +30,7 @@ const input1 = [
     'py',
   ];
 
-  console.log(creaRuta(input2));
+  console.log(creaRuta(input2)); // Resultado con console.log: /CodinGame/python.py
   
   const input3 = [
     'programming',
@@ -42,7 +42,31 @@ const input1 = [
     'py'
   ]
 
-  console.log(creaRuta(input3));
+  console.log(creaRuta(input3)); // Resultado con console.log: /programming/languages/easy/beginner/useful/pythonstuff.py
+
+  //Ejercicio 3.2: Crea una función para que con estos datos de entrada se produzca los siguientes resultados:
+ // Se comentó en clase que en la segunda y tercera yourFunction, los parámetros de entrada son secondInput y thirdInput, así que los he cambiado:
+
+  const input = 10;
+
+  const ponGuion = (input) => {
+    
+    const digits = input.toString().split('').join('-');
+  
+    return digits;
+  };
+
+  console.log(ponGuion(input)); // Resultado con console.log: '1-0'
+
+  const secondInput = 1;
+
+  console.log(ponGuion(secondInput)); // Resultado con console.log: '1'
+
+  const thirdInput = 11234;
+
+  console.log(ponGuion(thirdInput)); // Resultado con console.log: '1-1-2-3-4'
+
+
 
 
 
